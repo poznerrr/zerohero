@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  color: #ffffff;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.main {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: #e7f4e8;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.main-info__photo-box {
+  max-width: 400px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 10px solid #fff;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  animation: animate 7s infinite alternate;
+}
+
+.main-info__photo-box > img {
+  height: 200px;
+  width: auto;
+  border-radius: 40%;
+}
+.main__education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__languages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__skills-carusel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__job-experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100px;
+  width: 100%;
+}
+
+.href {
+  text-decoration: none;
+  color: #d2d1d1;
+  font-size: 20px;
+}
+
+.href:hover {
+  color: #59d49d;
+}
+
+.parag {
+  color: #000000;
+  font-style: italic;
+}
+
+.parag_large {
+  font-size: 30px;
+}
+
+.parag_medium {
+  font-size: 20px;
+}
+
+.subtitle {
+  font-size: 30px;
+  color: #022e1a;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.carusel {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.carusel__photo {
+  width: 400px;
+  height: 400px;
+  background-position: top;
+  background-size: cover;
+}
+
+.carusel__prev,
+.carusel__next {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.carusel__next {
+  background-image: url('./assets/arr.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carusel__prev {
+  background-image: url('./assets/arl.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carusel__next:hover,
+.carusel__prev:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+@keyframes animate {
+  0% {
+    border-radius: 27% 73% 48% 52% / 17% 38% 62% 83%;
+  }
+  40% {
+    border-radius: 61% 39% 69% 31% / 51% 59% 41% 49%;
+  }
+  60% {
+    border-radius: 40% 62% 25% 77% / 24% 49% 51% 69%;
+  }
+  100% {
+    border-radius: 28% 72% 56% 44% / 71% 26% 74% 29%;
+  }
+}

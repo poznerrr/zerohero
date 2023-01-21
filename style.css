@@ -20,7 +20,6 @@ body {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
-  background-color: #e7f4e8;
 }
 
 .main-info {
@@ -28,7 +27,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  padding-top: 30px;
+  background-color: #e7f4e8;
 }
 
 .main-info__photo-box {
@@ -49,30 +49,39 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #e7f4f8;
 }
 
 .main__skills {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #e5e6da;
+  gap: 10px;
+  padding-bottom: 20px;
 }
 
 .main__languages {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #d8d9ce;
+  gap: 10px;
+  padding-bottom: 20px;
 }
 
 .main__skills-carusel {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #e7f4f8;
 }
 
 .main__job-experience {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #e7f4e8;
 }
 
 .footer {
@@ -156,6 +165,37 @@ body {
   cursor: pointer;
 }
 
+.input {
+  width: 350px;
+  outline: none;
+  appearance: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background: #022e1a;
+  cursor: pointer;
+  border: 4px solid #333;
+  box-shadow: -350px 0 0 350px #022e1a;
+}
+.skill {
+  display: flex;
+  gap: 10px;
+}
+
+.skill:hover {
+  background-color: #59d49d;
+}
+
+.skill__name {
+  width: 150px;
+}
+
 @keyframes animate {
   0% {
     border-radius: 27% 73% 48% 52% / 17% 38% 62% 83%;
@@ -169,4 +209,7 @@ body {
   100% {
     border-radius: 28% 72% 56% 44% / 71% 26% 74% 29%;
   }
+}
+
+@media screen and (min-width: 320px) and (max-width: 560px) {
 }
